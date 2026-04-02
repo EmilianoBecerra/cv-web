@@ -1,0 +1,324 @@
+:root {
+  --color-font: #279627;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  max-width: 100vw;
+  height: auto;
+  padding: 3em 5em;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: bold;
+  font-size: 72px;
+}
+
+header h2 {
+  font-weight: bold;
+  font-size: 26px;
+  color: var(--color-font);
+}
+
+.tituloyredes {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.logos {
+  margin: 0px 23px;
+}
+
+.div-presentacion {
+  margin-top: 50px;
+}
+
+.presentacion {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.presentacion .color {
+  color: var(--color-font);
+}
+
+.nav-ul {
+  list-style-type: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.nav-ul li {
+  border-radius: 12px;
+  background: #279627;
+  background: linear-gradient(90deg, rgba(39, 150, 39, 1) 32%, rgba(0, 0, 0, 1) 100%);
+  text-align: center;
+  width: 200px;
+}
+
+.nav-ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.div-vector {
+  margin-top: 40px;
+  margin: auto;
+  height: 100px;
+}
+
+.img-vector {
+  width: 30px;
+  align-self: center;
+  animation-name: animacionFlecha;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate-reverse;
+  animation-fill-mode: backwards;
+  transition: margin-top 1s;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  margin: 40px 0px;
+  font-weight: 600;
+  flex-direction: column;
+}
+
+.card {
+  padding: 0px 20px;
+  background: rgba(39, 150, 39, 1);
+  background: linear-gradient(125deg, rgb(108, 180, 108) 0%, rgba(39, 150, 39, 1) 7%);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2);
+  margin: 20px 0px;
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.subtitulos {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.card h3 {
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: white;
+}
+
+.card p {
+  font-size: 20px;
+  padding: 0px 5px;
+}
+
+.proyecto {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2), 0px 0px 20px rgba(0, 0, 0, 0.2);
+  margin: 20px 0px;
+  padding: 20px;
+  border: 4px solid transparent;
+  border-radius: 12px;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #279627, #0C300C) border-box;
+}
+
+.proyecto h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0C300C;
+}
+
+.proyecto p {
+  font-size: 18px;
+  margin: 21px 0px;
+}
+
+.div-badges {
+  margin-top: 20px;
+}
+
+.badge {
+  width: fit-content;
+  background-color: #0C300C;
+  color: #3FD93F;
+  border-radius: 8px;
+  padding: 5px 14px;
+  margin-right: 5px;
+}
+
+.botones-proyecto {
+  margin: 10px 0px;
+  display: flex;
+  justify-content: end;
+}
+
+.boton-demo {
+  align-items: center;
+  border-radius: 12px;
+  border: 3px solid #217221;
+  color: #217221;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  height: 57px;
+  justify-content: center;
+  margin-right: 20px;
+  text-decoration: none;
+  width: 152px;
+}
+
+.boton-demo img {
+  margin-left: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.boton-github {
+  align-items: center;
+  background: linear-gradient(90deg, #279627 20%, #0C300C 80%);
+  border-radius: 12px;
+  color: white;
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  height: 57px;
+  justify-content: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  width: 152px;
+}
+
+.boton-github img {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+}
+
+footer {
+  background-image: url("/img/imagen-fondo.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  height: 750px;
+  padding: 60px;
+}
+
+.div-titulo-footer {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.titulo-footer {
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.div-frase-boton {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.div-frase {
+  width: 100%;
+}
+
+.frase-footer {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  margin-top: 20px;
+}
+
+.div-botones-contacto {
+  display: flex;
+  height: 200px;
+}
+
+.div-botones-contacto a {
+  margin-right: 28px;
+  margin-top: 80px;
+  width: 240px;
+  height: 66px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.boton-linkedin {
+  color: #3FD93F;
+  border: 1px solid #3FD93F;
+}
+
+.boton-mail {
+  color: white;
+  background: linear-gradient(80deg, #279627 1%, #0C300C 80%);
+  border: none;
+}
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+  .div-botones-contacto {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+  }
+
+  .div-botones-contacto a {
+    margin-right: 10px;
+    margin-top: 20px;
+    width: 120px;
+    height: 33px;
+    flex-direction: column;
+  }
+}
+
+@keyframes animacionFlecha {
+  from {
+    margin-top: 40px
+  }
+
+  to {
+    margin-top: 60px;
+  }
+}
