@@ -225,7 +225,7 @@ main {
 }
 
 footer {
-  background-image: url("/img/imagen-fondo.png");
+  background-image: url("../img/imagen-fondo.png");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
